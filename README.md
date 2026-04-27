@@ -40,7 +40,8 @@ This system leverages the **Isolation Forest** algorithm to identify deviations 
 │   ├── model_trainer.py    # Training logic
 │   ├── detector.py         # Inference and classification
 │   └── visualizer.py       # Matplotlib plotting logic
-├── main.py             # Pipeline entry point
+├── app.py              # Premium Streamlit Dashboard
+├── main.py             # CLI Pipeline entry point
 ├── requirements.txt    # Project dependencies
 └── README.md           # Documentation
 ```
@@ -60,7 +61,12 @@ This system leverages the **Isolation Forest** algorithm to identify deviations 
    pip install -r requirements.txt
    ```
 
-3. **Run the detection pipeline**:
+3. **Run the Dashboard (Recommended)**:
+   ```bash
+   streamlit run app.py
+   ```
+
+4. **Run the CLI version**:
    ```bash
    python main.py
    ```
